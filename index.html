@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Amos Korir - Web Developer</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+	<link rel="stylesheet" href="assets/index.css?v=4">
+	<link rel="icon" href="assets/profile.jpeg" type="image/jpeg">
+	<script src="assets/theme.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+
+<body>
+	<!-- Progress & Loading Section -->
+	<div id="progress-container">
+		<div id="progress-bar"></div>
+	</div>
+	<div id="loading">
+		<div id="spinner"></div>
+	</div>
+	<!-- Profile Section -->
+	<div id="profile">
+		<div id="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">
+			<i class="fas fa-adjust"></i>
+		</div>
+		<div id="profile_img" style="background: url(assets/profile.jpeg) center;">
+		</div>
+		<div id="username">
+			<span style="display: block;">Hi, I'm <b>Amos Korir</b> 👋🏽</span>
+		</div>
+		<div id="about">
+			<p><b>Full-Stack Web Developer</b></p>
+			<p>
+				I build robust, scalable, and user-centered web applications.
+			</p>
+			<p>
+				I'm proficient in JavaScript, TypeScript, and Python, with hands-on experience in MySQL, PostgreSQL, and
+				MongoDB.
+			</p>
+			<p>
+				Currently, I am a freelance developer, delivering modern web solutions for clients and collaborators.
+			</p>
+			<p>
+				I’m open to work, connections, collaborations, and new opportunities.
+			</p>
+		</div>
+		<div id="socials">
+
+			<div class="socials">
+				<a href="https://wa.me/254719388139" target="_blank" title="WhatsApp"><i
+						class="fab fa-whatsapp"></i></a>
+				<a href="mailto:amoskorir631@gmail.com" target="_blank" title="Email"><i
+						class="fas fa-envelope"></i></a>
+				<a href="https://github.com/amohnice" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+				<a href="https://linkedin.com/in/amos-korir" target="_blank" title="LinkedIn"><i
+						class="fab fa-linkedin"></i></a>
+			</div>
+			<div class="sidebar__inner "></div>
+		</div>
+	</div>
+
+	<!-- Scroll Down Indicator -->
+	<div class="scroll-down">
+		<div class="mouse">
+			<div class="wheel"></div>
+		</div>
+		<div class="arrow">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+
+	<div id="display">
+
+		<!-- Certifications Section -->
+		<div id="forks" style="display: block;">
+			<h1>Certifications.</h1>
+			<div class="cert-grid" id="forks_section">
+				<a href="assets/certificates/amos_PLP_certificate.pdf" target="_blank" class="cert-card">
+					<div class="cert-icon">
+						<i class="fas fa-brain"></i>
+					</div>
+					<div class="cert-content">
+						<h3>AI Career Essentials</h3>
+						<span class="cert-issuer">ALX</span>
+						<div class="cert-meta">
+							<span><i class="far fa-calendar-alt"></i> July 2024</span>
+							<span><i class="fas fa-map-marker-alt"></i> Nairobi</span>
+						</div>
+					</div>
+					<div class="cert-action">
+						<i class="fas fa-external-link-alt"></i>
+					</div>
+				</a>
+				<a href="assets/certificates/" target="_blank" class="cert-card">
+					<div class="cert-icon">
+						<i class="fas fa-code"></i>
+					</div>
+					<div class="cert-content">
+						<h3>Web Development</h3>
+						<span class="cert-issuer">eMobilis</span>
+						<div class="cert-meta">
+							<span><i class="far fa-calendar-alt"></i> Oct 2024 - Dec 2024</span>
+							<span><i class="fas fa-map-marker-alt"></i> Nairobi</span>
+						</div>
+					</div>
+					<div class="cert-action">
+						<i class="fas fa-external-link-alt"></i>
+					</div>
+				</a>
+				<a href="assets/certificates/amos_PLP_certificate.pdf" target="_blank" class="cert-card">
+					<div class="cert-icon">
+						<i class="fas fa-code-branch"></i>
+					</div>
+					<div class="cert-content">
+						<h3>Software Development</h3>
+						<span class="cert-issuer">PLP x Safaricom Hook</span>
+						<div class="cert-meta">
+							<span><i class="far fa-calendar-alt"></i> Dec 2024 - Mar 2025</span>
+							<span><i class="fas fa-map-marker-alt"></i> Nairobi</span>
+						</div>
+					</div>
+					<div class="cert-action">
+						<i class="fas fa-external-link-alt"></i>
+					</div>
+				</a>
+
+				<a href="assets/certificates/amos_Unstacked%20Labs%20BwAI%20Certificate%20of%20Completion.pdf"
+					target="_blank" class="cert-card">
+					<div class="cert-icon">
+						<i class="fas fa-robot"></i>
+					</div>
+					<div class="cert-content">
+						<h3>Genkit, ADK & Vertex AI</h3>
+						<span class="cert-issuer">Build with AI (Unstacked Labs)</span>
+						<div class="cert-meta">
+							<span><i class="far fa-calendar-alt"></i> Sept 2025 - Dec 2025</span>
+							<span><i class="fas fa-map-marker-alt"></i> Nairobi</span>
+						</div>
+					</div>
+					<div class="cert-action">
+						<i class="fas fa-external-link-alt"></i>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<!-- Skills Section -->
+		<h1>Skills.</h1>
+		<div id="skills">
+			<div class="skill-item" title="HTML">
+				<i class="devicon-html5-plain"></i>
+			</div>
+			<div class="skill-item" title="CSS">
+				<i class="devicon-css3-plain"></i>
+			</div>
+			<div class="skill-item" title="TailwindCSS">
+				<i class="devicon-tailwindcss-plain"></i>
+			</div>
+			<div class="skill-item" title="JavaScript">
+				<i class="devicon-javascript-plain"></i>
+			</div>
+			<div class="skill-item" title="TypeScript">
+				<i class="devicon-typescript-plain"></i>
+			</div>
+			<div class="skill-item" title="Python">
+				<i class="devicon-python-plain"></i>
+			</div>
+			<div class="skill-item" title="React">
+				<i class="devicon-react-plain"></i>
+			</div>
+			<div class="skill-item" title="Next.js">
+				<i class="devicon-nextjs-original-wordmark"></i>
+			</div>
+			<div class="skill-item" title="Node.js">
+				<i class="devicon-nodejs-plain"></i>
+			</div>
+			<div class="skill-item" title="Express">
+				<i class="devicon-express-original"></i>
+			</div>
+			<div class="skill-item" title="Django">
+				<i class="devicon-django-plain"></i>
+			</div>
+			<div class="skill-item" title="MySQL">
+				<i class="devicon-mysql-plain"></i>
+			</div>
+			<div class="skill-item" title="PostgreSQL">
+				<i class="devicon-postgresql-plain"></i>
+			</div>
+			<div class="skill-item" title="MongoDB">
+				<i class="devicon-mongodb-plain"></i>
+			</div>
+			<div class="skill-item" title="SQLite">
+				<i class="devicon-sqlite-plain"></i>
+			</div>
+		</div>
+
+		<!-- Projects Section -->
+		<div id="work">
+			<h1>Projects.</h1>
+			<div class="projects" id="work_section">
+				<a href="project.html?id=commerce-os">
+					<section>
+						<div class="section_title">
+							<span class="alignleft">🚀 Commerce OS</span>
+							<span class="alignright">→</span>
+						</div>
+						<div class="about_section">
+							<span style="display:block;">A multi-tenant conversational commerce platform built for
+								WhatsApp, leveraging Genkit AI and M-Pesa.</span>
+						</div>
+					</section>
+				</a>
+				<a href="project.html?id=smartfarm">
+					<section>
+						<div class="section_title">
+							<span class="alignleft">🌾 SmartFarm Advisor</span>
+							<span class="alignright">→</span>
+						</div>
+						<div class="about_section">
+							<span style="display:block;">AI-powered agricultural assistant for African farmers to detect
+								plant diseases and receive advice.</span>
+						</div>
+					</section>
+				</a>
+				<a href="project.html?id=acute-spa-and-salon">
+					<section>
+						<div class="section_title">
+							<span class="alignleft">💆‍♀️ Acute Spa and Salon</span>
+							<span class="alignright">→</span>
+						</div>
+						<div class="about_section">
+							<span style="display:block;">A modern, responsive web application for a spa and salon
+								business built with Vite and React.</span>
+						</div>
+					</section>
+				</a>
+				<a href="project.html?id=akitech-solutions">
+					<section>
+						<div class="section_title">
+							<span class="alignleft">👨‍💻 AkiTech Solutions</span>
+							<span class="alignright">→</span>
+						</div>
+						<div class="about_section">
+							<span style="display:block;">Software solutions start-up brand website built with Next.js,
+								Tailwind CSS, and React.</span>
+						</div>
+					</section>
+				</a>
+				<a href="project.html?id=autoparts-hub">
+					<section>
+						<div class="section_title">
+							<span class="alignleft">🏎️ AutoParts Hub</span>
+							<span class="alignright">→</span>
+						</div>
+						<div class="about_section">
+							<span style="display:block;">Automobile parts inventory and management system hub.</span>
+						</div>
+					</section>
+				</a>
+			</div>
+		</div>
+
+		<!-- Services Section -->
+		<div id="services">
+			<h1>Services.</h1>
+			<div class="services-grid">
+
+				<!-- Web Design & Development -->
+				<div class="service-card">
+					<div class="service-icon"><i class="fas fa-palette"></i></div>
+					<h3>Web Design & Branding</h3>
+					<p>Crafting visually stunning, user-centric designs and cohesive branding assets that leave a
+						lasting impression.</p>
+				</div>
+				<div class="service-card">
+					<div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+					<h3>Personal & Business Websites</h3>
+					<p>Building professional portfolios and business websites tailored to showcase your unique value
+						proposition.</p>
+				</div>
+
+				<!-- E-Commerce & Systems -->
+				<div class="service-card">
+					<div class="service-icon"><i class="fas fa-shopping-cart"></i></div>
+					<h3>E-Commerce Solutions</h3>
+					<p>Developing robust online stores with secure gateways, inventory management, and seamless
+						functional checkout.</p>
+				</div>
+				<div class="service-card">
+					<div class="service-icon"><i class="fas fa-money-bill-wave"></i></div>
+					<h3>Payment Integration</h3>
+					<p>Integrating secure payment gateways like M-Pesa, Stripe, and PayPal for smooth financial
+						transactions.</p>
+				</div>
+
+				<!-- Business Tools -->
+				<div class="service-card">
+					<div class="service-icon"><i class="fas fa-cash-register"></i></div>
+					<h3>POS & Inventory</h3>
+					<p>Custom Point of Sale and inventory systems to streamline operations and track stock in real-time.
+					</p>
+				</div>
+
+				<!-- Advanced Tech -->
+				<div class="service-card">
+					<div class="service-icon"><i class="fas fa-brain"></i></div>
+					<h3>AI Integration</h3>
+					<p>Leveraging Artificial Intelligence to automate tasks, analyze data, and enhance user
+						interactions.</p>
+				</div>
+				<div class="service-card">
+					<div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+					<h3>PWA Support</h3>
+					<p>Building Progressive Web Apps that offer a native app-like experience directly within the web
+						browser.</p>
+				</div>
+				<div class="service-card">
+					<div class="service-icon"><i class="fas fa-cogs"></i></div>
+					<h3>Custom Solutions</h3>
+					<p>Tailor-made software solutions designed to address specific business challenges and requirements.
+					</p>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- Contact Section -->
+		<div id="contact">
+			<h1>Contacts.</h1>
+			<div class="contact-grid">
+				<a href="tel:+254719388139" class="contact-item">
+					<i class="fas fa-phone"></i>
+					<span>+254 719 388 139</span>
+				</a>
+				<a href="https://wa.me/254719388139" target="_blank" class="contact-item">
+					<i class="fab fa-whatsapp"></i>
+					<span>+254 719 388 139</span>
+				</a>
+				<a href="mailto:amoskorir631@gmail.com" class="contact-item">
+					<i class="fas fa-envelope"></i>
+					<span>amoskorir631@gmail.com</span>
+				</a>
+				<a href="https://github.com/amohnice" target="_blank" class="contact-item">
+					<i class="fab fa-github"></i>
+					<span>GitHub</span>
+				</a>
+				<a href="https://linkedin.com/in/amos-korir" target="_blank" class="contact-item">
+					<i class="fab fa-linkedin"></i>
+					<span>LinkedIn</span>
+				</a>
+				<div class="contact-item location-item">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>Nairobi, Kenya</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer Section -->
+		<div id="footer">
+			<span>© 2026 Amos Korir. Built with passion.</span>
+		</div>
+	</div>
+	<!-- Scripts -->
+	<script type="text/javascript">
+		setTimeout(function () {
+			document.getElementById("loading").classList.add("animated");
+			document.getElementById("loading").classList.add("fadeOut");
+			setTimeout(function () {
+				document.getElementById("loading").classList.remove("animated");
+				document.getElementById("loading").classList.remove("fadeOut");
+				document.getElementById("loading").style.display = "none";
+			}, 800);
+		}, 1500);
+		$.getJSON("blog.json", function (blog) {
+			blog = blog || [];
+			if (blog.length == 0) {
+				var blogSection = document.getElementById("blog_section");
+				if (blogSection) {
+					blogSection.style.display = "none";
+				}
+				return;
+			}
+			for (var i = 0; i < blog.length; i++) {
+				$("#blogs").append(`
+            <a href="./blog/${blog[i].url_title}/" target="_blank">
+                <section>
+                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
+                    <div class="blog_container">
+
+                        <div class="section_title">${blog[i].title}</div>
+                        <div class="about_section">
+                            ${blog[i].sub_title}
+                        </div>
+                    </div>
+                </section>
+            </a>
+            `);
+			}
+		}).fail(function () {
+			var blogSection = document.getElementById("blog_section");
+			if (blogSection) {
+				blogSection.style.display = "none";
+			}
+		});
+	</script>
+
+	<script>
+		const magicProjectsGrid = new MagicGrid({
+			container: "#work_section",
+			animate: false,
+			gutter: 30, // default gutter size
+			static: true,
+			useMin: false,
+			maxColumns: 2,
+			useTransform: true
+		});
+
+		$("document").ready(() => {
+			magicProjectsGrid.listen();
+		});
+	</script>
+
+	<!-- Back to Top Button -->
+	<button id="back-to-top" class="back-to-top" aria-label="Back to top">
+		<i class="fas fa-arrow-up"></i>
+	</button>
+
+	<!-- Back to Top Button Script -->
+	<script>
+		const backToTopBtn = document.getElementById('back-to-top');
+
+		// Show/hide button on scroll
+		window.addEventListener('scroll', () => {
+			if (window.pageYOffset > 300) {
+				backToTopBtn.classList.add('visible');
+			} else {
+				backToTopBtn.classList.remove('visible');
+			}
+		});
+
+		// Scroll to top on click
+		backToTopBtn.addEventListener('click', () => {
+			window.scrollTo({
+				top: 0,
+				behavior: 'smooth'
+			});
+		});
+	</script>
+
+
+</body>
+
+</html>

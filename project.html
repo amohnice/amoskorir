@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Amos Korir</title>
+    <link rel="stylesheet" href="assets/index.css?v=5">
+    <link rel="stylesheet" href="assets/projects/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <script src="assets/theme.js"></script>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Amos Korir - Portfolio Project">
+    <!-- Open Graph tags will be set dynamically by project-loader.js -->
+    <!-- Twitter Card tags will be set dynamically by project-loader.js -->
+
+</head>
+
+<body>
+    <div id="project-container">
+        <!-- Header Section -->
+        <header>
+            <a href="index.html"><i class="fas fa-arrow-left"></i> Home</a>
+            <div id="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">
+                <i class="fas fa-adjust"></i>
+            </div>
+            <a href="#" target="_blank" class="btn btn-secondary live-demo-link">Live Demo</a>
+        </header>
+
+        <!-- Project Hero Section -->
+        <section class="project-hero">
+            <h1 id="project-title">Loading...</h1>
+
+            <!-- Hero image and tech stack side-by-side -->
+            <div class="hero-sidebar-container">
+                <div class="hero-image">
+                    <img id="project-hero-img" src="" alt="Project Preview" loading="lazy" decoding="async">
+                </div>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+                    <div class="tech-stack">
+                        <h2>Tech Stack</h2>
+                        <div id="project-tech-stack" class="tech-list">
+                            <!-- Tags loaded via JS -->
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <a href="#" target="_blank" class="btn btn-primary live-demo-link">
+                            <i class="fas fa-external-link-alt"></i> View Demo
+                        </a>
+                        <a href="#" target="_blank" class="btn btn-secondary" id="source-code-link">
+                            <i class="fab fa-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content below -->
+            <div class="content-section">
+                <h2>About the Project</h2>
+                <p id="project-about">Loading description...</p>
+
+                <h2>Key Features</h2>
+                <ul id="project-features">
+                    <!-- Features loaded via JS -->
+                </ul>
+            </div>
+
+            <!-- Project Navigation Section -->
+            <nav id="project-navigation" class="project-nav">
+                <a href="#" class="nav-btn nav-prev" style="display: none;">
+                    <i class="fas fa-arrow-left"></i>
+                    <div>
+                        <span class="nav-direction">Previous</span>
+                        <span class="nav-label"></span>
+                    </div>
+                </a>
+                <a href="#" class="nav-btn nav-next" style="display: none;">
+                    <div>
+                        <span class="nav-direction">Next</span>
+                        <span class="nav-label"></span>
+                    </div>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </nav>
+        </section>
+
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+        <!-- Footer Section -->
+        <footer>
+            <span>&copy; 2026 Amos Korir. Built with passion.</span>
+        </footer>
+    </div>
+
+    <!-- Scripts Section -->
+    <!-- Load Project Data -->
+    <script src="assets/project-loader.js"></script>
+
+    <!-- Back to Top Button Script -->
+    <script>
+        const backToTopBtn = document.getElementById('back-to-top');
+
+        // Show/hide button on scroll
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        // Scroll to top on click
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+
+</html>
