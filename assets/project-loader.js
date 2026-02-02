@@ -55,11 +55,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         metaDesc.content = project.seoDescription || project.about;
 
         // Set Open Graph tags
+        const projectImageUrl = new URL(project.heroImage, window.location.origin).href;
+        const projectUrl = window.location.href;
+        const projectTitle = project.title;
+        const projectDesc = project.seoDescription || project.about;
+
         const ogTags = {
-            'og:title': project.title,
-            'og:description': project.seoDescription || project.about,
-            'og:image': new URL(project.heroImage, window.location.origin).href,
-            'og:url': window.location.href,
+            'og:title': projectTitle,
+            'og:description': projectDesc,
+            'og:image': projectImageUrl,
+            'og:url': projectUrl,
             'og:type': 'website'
         };
 
@@ -76,9 +81,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Set Twitter Card tags
         const twitterTags = {
             'twitter:card': 'summary_large_image',
-            'twitter:title': project.title,
-            'twitter:description': project.seoDescription || project.about,
-            'twitter:image': new URL(project.heroImage, window.location.origin).href
+            'twitter:title': projectTitle,
+            'twitter:description': projectDesc,
+            'twitter:image': projectImageUrl
         };
 
         Object.entries(twitterTags).forEach(([name, content]) => {
@@ -89,6 +94,24 @@ document.addEventListener('DOMContentLoaded', async () => {
                 document.head.appendChild(tag);
             }
             tag.content = content;
+        });
+
+        // Set LinkedIN, WhatsApp, Discord dynamic tags
+        const otherMeta = [
+            { selector: 'meta[name="linkedin:title"]', content: `Amos Korir | Project: ${projectTitle}` },
+            { selector: 'meta[name="linkedin:description"]', content: projectDesc },
+            { selector: 'meta[name="linkedin:image"]', content: projectImageUrl },
+            { selector: 'meta[property="whatsapp:title"]', content: projectTitle },
+            { selector: 'meta[property="whatsapp:description"]', content: projectDesc },
+            { selector: 'meta[property="whatsapp:image"]', content: projectImageUrl },
+            { selector: 'meta[property="discord:title"]', content: projectTitle },
+            { selector: 'meta[property="discord:description"]', content: projectDesc },
+            { selector: 'meta[property="discord:image"]', content: projectImageUrl }
+        ];
+
+        otherMeta.forEach(m => {
+            let tag = document.querySelector(m.selector);
+            if (tag) tag.content = m.content;
         });
 
         // Set Hero Image
