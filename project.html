@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/projects/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
     <script src="assets/theme.js"></script>
+    <script src="assets/grid-pattern.js"></script>
 
     <!-- Basic Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -192,6 +193,16 @@
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
+            });
+        });
+
+        // Initialize grid pattern background
+        document.addEventListener('DOMContentLoaded', function() {
+            injectGridPattern(document.body, {
+                width: 40,
+                height: 40,
+                fillColor: 'rgb(209 213 219 / 0.15)',
+                strokeColor: 'rgb(209 213 219 / 0.15)'
             });
         });
     </script>

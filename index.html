@@ -15,6 +15,7 @@
 	<link rel="stylesheet" href="assets/index.css?v=4">
 	<link rel="icon" href="assets/profile.jpeg" type="image/jpeg">
 	<script src="assets/theme.js"></script>
+	<script src="assets/grid-pattern.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
 	<!-- Basic Meta Tags -->
@@ -548,6 +549,16 @@
 			window.scrollTo({
 				top: 0,
 				behavior: 'smooth'
+			});
+		});
+
+		// Initialize grid pattern background
+		document.addEventListener('DOMContentLoaded', function() {
+			injectGridPattern(document.body, {
+				width: 40,
+				height: 40,
+				fillColor: 'rgb(209 213 219 / 0.15)',
+				strokeColor: 'rgb(209 213 219 / 0.15)'
 			});
 		});
 	</script>
