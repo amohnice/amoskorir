@@ -3,7 +3,7 @@
         "id": "smartfarm",
         "title": "🌾 SmartFarm Advisor",
         "heroImage": "assets/projects/smartfarm.png",
-        "liveDemo": "https://smartfarm-smartfarm-frontend.vercel.app/",
+        "liveDemo": "https://smartfarm-advisor.vercel.app/",
         "sourceCode": "https://github.com/amohnice/smartfarm",
         "about": "SmartFarm Advisor is an intelligent farming assistant designed for African smallholder farmers. It leverages AI to detect plant diseases, provide agricultural advice, and offer localized weather insights, helping farmers make data-driven decisions to improve crop yields.",
         "seoDescription": "AI-powered farming assistant for African smallholders. Detect plant diseases, get advisory, and weather insights to improve crop yields.",
@@ -40,12 +40,12 @@
         ]
     },
     {
-        "id": "commerce-os",
-        "title": "Commerce OS 🚀",
+        "id": "wappstore",
+        "title": "WappStore 🚀",
         "heroImage": "assets/projects/commerce-os.png",
-        "liveDemo": "https://commerce-os-five.vercel.app/",
-        "sourceCode": "https://github.com/amohnice/commerce-os",
-        "about": "Commerce OS is a multi-tenant conversational commerce platform built for WhatsApp, leveraging the power of Genkit AI and seamless M-Pesa integration. It's designed to empower modern African merchants by scaling their businesses through AI-driven conversational commerce.",
+        "liveDemo": "https://wappstore.vercel.app/",
+        "sourceCode": "https://github.com/amohnice/wappstore",
+        "about": "WappStore is a multi-tenant conversational commerce platform built for WhatsApp, leveraging the power of Genkit AI and seamless M-Pesa integration. It's designed to empower modern African merchants by scaling their businesses through AI-driven conversational commerce.",
         "seoDescription": "Multi-tenant conversational commerce platform for WhatsApp with Genkit AI and M-Pesa integration, empowering African merchants.",
         "features": [
             {
